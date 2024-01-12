@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mass Converter</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .converter-body {
+            margin-top: 20px;
+        }
+
+        .converter-title {
+            color: #333;
+        }
+
+        img {
+            border: 0;
+            width: 500px; /* Set the desired width for the image */
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            margin: 5px;
+            width: 200px;
+        }
+
+        select {
+            padding: 5px;
+            margin: 5px;
+            width: 200px;
+        }
+
+        span {
+            display: block;
+            margin: 10px;
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+        u {
+            text-decoration: underline;
+        }
+
+        b {
+            color: #0066cc;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="converter-body">
+        <h1 class="converter-title">Mass Converter</h1>
+        <img src="mass.png" width="500" />
+        <br />
+        <input type="text" placeholder="input" id="input" />
+        <select id="inputtype">
+            <option value="1">tonne</option>
+            <option value="2">kilogram</option>
+            <option value="3">gram</option>
+            <option value="4">milligram</option>
+            <option value="5">quintal</option>
+            <option value="6">pound</option>
+            <option value="7">ounce</option>
+            <option value="8">carat</option>
+        </select>
+        <br />
+        <input type="text" placeholder="result" id="result" />
+        <select id="resulttype">
+            <option value="1">tonne</option>
+            <option value="2">kilogram</option>
+            <option value="3">gram</option>
+            <option value="4">milligram</option>
+            <option value="5">quintal</option>
+            <option value="6">pound</option>
+            <option value="7">ounce</option>
+            <option value="8">carat</option>
+        </select>
+
+        <span></span>
+
+    </div>
+    <script src="mass.js"></script>
+    <br />
+    <br />
+    <br />
+    <u><b><a href="home.html">Back to Homepage</a></b></u>
+</body>
+
+</html>
