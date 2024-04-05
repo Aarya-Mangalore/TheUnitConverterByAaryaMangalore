@@ -15,7 +15,7 @@
         }
 
         header {
-            margin-bottom: 20px;
+            margin-bottom: 50px;
         }
 
         h1 {
@@ -35,20 +35,72 @@
 
         article {
             margin: 10px;
+            transition: transform 0.3s ease; /* Apply transition effect */
+            border-radius: 10px; /* Apply rounded corners */
+            width: 200px; /* Set the desired width for each article */
+        }
+
+        article:hover {
+            transform: translateY(-5px); /* Apply transformation effect */
         }
 
         img {
             border: 0;
-            width: 200px; /* Set the desired width for all images */
-            height: 150px; /* Set the desired height for all images */
+            width: 100%; /* Set the image width to 100% of its container */
+            max-width: 150px; /* Set the maximum width for the images */
+            height: auto;
+            border-radius: 10px; /* Apply rounded corners */
+        }
+
+        header img {
+    width: 30%; /* Set the width of the header image to 100% */
+    max-width: 800px; /* Set a maximum width for the header image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+        article img {
+            width: 150px; /* Set a fixed width for the article images */
+            height: 100px; /* Set a fixed height for the article images */
         }
 
         b {
-            color: #0066cc;
+            color: #000000;
         }
 
         u {
-            text-decoration: underline;
+            text-decoration: underline
+            color(srgb red green blue);
+        }
+
+        footer {
+            background-color: black; /* Change background color to black */
+            padding: 20px;
+            text-align: center;
+            color: white; /* Change text color to white */
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-5px);
+        }
+
+        .social-links img {
+            width: 30px;
+            height: auto;
+        }
+
+        .social-links a img:hover {
+            filter: brightness(0.8);
         }
     </style>
 </head>
@@ -57,9 +109,9 @@
     <header>
         <a href="home.html">
             <h1><b><i><u>The Unit Converter</u></i></b></h1>
-            <img src="unitconverter.jpg" width="500" />
+            <img src="unitconverter.jpg" />
         </a>
-        <h4>select the quantity to be converted</h4>
+        <h4>Convertion made easy</h4>
     </header>
 
     <section>
@@ -90,7 +142,7 @@
         </article>
         <article>
             <a href="data.html">
-                <img src="data.jpg" /><br /><b><u>Computer data</u></b>
+                <img src="data.jpg" /><br /><b><u>Computer storage</u></b>
             </a>
         </article>
         <article>
@@ -99,6 +151,22 @@
             </a>
         </article>
     </section>
+
+    <footer>
+        <p>Created by Aarya Mangalore</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/aarya-mangalore-3b168425b/" target="_blank">
+                <img src="LinkedinLogo.jpg"> @Aarya Mangalore
+            </a>
+            <a href="https://www.instagram.com/aarya_p_m/" target="_blank">
+                <img src="instagramLogo.jpeg"> @aarya_p_m
+            </a>
+            <a href="https://github.com/Aarya-Mangalore" target="_blank">
+                <img src="GithubLogo.png"> @Aarya-Mangalore
+            </a>
+        </div>
+    </footer>
+
 </body>
 
 </html>

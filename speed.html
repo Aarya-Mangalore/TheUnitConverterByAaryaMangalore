@@ -51,12 +51,46 @@
         }
 
         b {
-            color: #0066cc;
+            color: #000000;
         }
 
         a {
             text-decoration: none;
-            color: #0066cc;
+            color: #5f99d3;
+        }
+
+        footer {
+            background-color: #333; /* Dark background color */
+            color: white; /* White text color */
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #0066cc; /* Add a top border with accent color */
+            margin-top: auto; /* Push footer to the bottom of the screen */
+            width: 100%; /* Full width */
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-5px);
+        }
+
+        .social-links img {
+            width: 30px;
+            height: auto;
+            border-radius: 50%; /* Make the social media icons round */
+        }
+
+        .social-links a img:hover {
+            filter: brightness(0.8);
         }
     </style>
 </head>
@@ -92,6 +126,20 @@
     <br />
     <br />
     <u><b><a href="home.html">Back to Homepage</a></b></u>
+    <footer>
+        <p>Created by Aarya Mangalore</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/aarya-mangalore-3b168425b/" target="_blank">
+                <img src="LinkedinLogo.jpg"> @Aarya Mangalore
+            </a>
+            <a href="https://www.instagram.com/aarya_p_m/" target="_blank">
+                <img src="instagramLogo.jpeg"> @aarya_p_m
+            </a>
+            <a href="https://github.com/Aarya-Mangalore" target="_blank">
+                <img src="GithubLogo.png"> @Aarya-Mangalore
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>
